@@ -1,0 +1,6 @@
+app name:ng-http-service
+CLIENT INFO
+CLIENT ID	718e282f61474d43a0c2e51f0b1de1cf
+CLIENT SECRET	de5a59095b3542b38aea1e0948f00c9c
+WEBSITE URL	http://ng-http-service.com
+REDIRECT URI	http://ng-http-service-auth.com

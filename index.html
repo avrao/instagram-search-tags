@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="JSONtag" class="ng-scope">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+	<script type="text/javascript" src="http://code.angularjs.org/1.2.16/angular-animate.js"></script>
+
+	<title>Mad Libs</title>
+</head>
+<body ng-controller="tagCtrl" class="ng-scope">
+
+	<header>
+		<img class="imgheader" src="images/ng-instagram.png" />
+	</header>
+
+
+	<form name="tagForm" onsubmit="reset();" ng-submit="searchTag(tagword)" required>
+
+	<input type="text" ng-model="tagword" name="tag-word" placeholder="Enter a tag to search" required>
+
+	<input class="submit" ng-click="showdiv()" type="submit" value="Submit">	
+	</form> 
+
+	<h1 ng-show="showmessage">Searching Instagram for photos tagged with "{{tagword}}"
+	</h1> 
+		
+	<h2 ng-show="showresult">We found {{ results.length }} results for "{{ tagname }}"
+	</h2>
+	<div id="div" class="divimgblock"> 
+		<div ng-repeat="result in results">
+			<a href="{{result.link}}" target="_new">
+			<img class="img" ng-src="{{ result.images.low_resolution.url }}"/></a>
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="script.js"></script>
+
+</body>
+
+

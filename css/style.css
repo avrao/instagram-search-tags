@@ -1,0 +1,55 @@
+body {
+	width:75%;margin:0 10% 0 10%;text-align:center;
+}
+header {
+	margin:5% 0 5% 0;
+}
+
+input{
+	width:25%;height:34px;font-size: 22px;
+}
+
+.submit{
+	margin-left:2%;font:bold 22px black;width:10%;height:40px;
+}
+.divimgblock{
+	width:100%;margin:0 10% 0 10%;text-align:center;
+}
+.imgheader{
+	width:334px; height:117px;
+}
+.img{
+	float:left;margin:1%; width:306px;height:306px;
+}
+/* slide animation for generated instagram images*/
+#div {
+	margin: inherit;
+  	-moz-animation-duration: 15s;
+    -webkit-animation-duration: 15s;
+    -moz-animation-name: slidein;
+    -webkit-animation-name: slidein;
+}
+
+@-moz-keyframes slidein {
+  from {
+    margin-left:100%;
+    width:300%
+  }
+  
+  to {
+    margin-left:0%;
+    width:100%;
+  }
+}
+
+@-webkit-keyframes slidein {
+  from {
+    margin-left:100%;
+    width:300%
+  }
+  
+  to {
+    margin-left:0%;
+    width:100%;
+  }
+}
